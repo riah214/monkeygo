@@ -1,0 +1,51 @@
+/* Reset default spacing */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navigation bar container */
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+}
+
+/* Remove bullet styling */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Make list horizontal */
+nav li {
+    float: left;
+}
+
+/* Link styling */
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* Hover effect (NOT active page) */
+nav li a:hover:not(.active) {
+    background-color: #111;
+}
+
+/* Active page styling */
+.active {
+    background-color: #04AA6D;
+}
+
+/* Clear floats after nav */
+nav::after {
+    content: "";
+    display: table;
+    clear: both;
+}
